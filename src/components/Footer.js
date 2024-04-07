@@ -9,7 +9,7 @@ export default function Footer() {
       <Link to="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
         
       </Link>
-      <span className="text-muted">© 2024 TummyCravings, Inc</span>
+      <span className=" " style={{ textAlign: 'center',}}>© 2024 TummyCravings.com, Inc</span>
     </div>
    </footer>
     </div>

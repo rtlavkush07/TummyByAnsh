@@ -38,12 +38,12 @@ export default function Home() {
 
 
     return (
-        <div>
+        <div style={{  background: 'linear-gradient(to right, orange, white, orange)',  }}>
             <div>
                 <Navbar />
             </div>
             <div>
-                <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel" style={{objectFit: "contain !important"}}>
+                <div id="carouselExampleFade" className="carousel slide carousel-fade " data-bs-ride="carousel" style={{objectFit: "contain !important"}}>
   <div className="carousel-inner" id ='carousel'>
     <div className="carousel-caption" style={{zIndex:"10"}}>
     <div className="d-flex jusstify-content-center">
@@ -80,7 +80,7 @@ export default function Home() {
                      ? foodCat.map((data)=>{
                         return (
                             <div  className="row mb-3">
-                        <div key ={data._id} className="fs-3 m-3">
+                        <div key ={data._id} className="fs-3 m-3 " style={{ color: "black", fontFamily: "sans-serif" }}>
                             {data.CategoryName}
                             
                             </div>

@@ -45,10 +45,11 @@ export default function Signup() {
             <div>
                 <Navbar />
             </div>
-            <div className="container">
-                <form onSubmit={handleSubmit}>
+            <div className="container" style={{  display: 'flex', justifyContent: 'center',  alignItems: 'center',  height: '100vh', width: '100%',background: 'linear-gradient(to right, orange, white, orange)',  }}>
+            <div  style={{background: 'aliceblue', padding: '50px', borderRadius: '5px',  }} >
+            <form onSubmit={handleSubmit}>
                     <div className="mb-3">
-                        <label htmlFor="name" className="form-label">
+                        <label htmlFor="name" className="form-label"  style={{fontFamily: 'sans-serif'}}>
                             Name
                         </label>
                         <input
@@ -60,7 +61,7 @@ export default function Signup() {
                         />
                     </div>
                     <div className="mb-3">
-                        <label htmlFor="exampleInputEmail1" className="form-label">
+                        <label htmlFor="exampleInputEmail1" className="form-label" style={{fontFamily: 'sans-serif'}}>
                             Email address
                         </label>
                         <input
@@ -72,12 +73,12 @@ export default function Signup() {
                             id="exampleInputEmail1"
                             aria-describedby="emailHelp"
                         />
-                        <div id="emailHelp" className="form-text">
+                        <div id="emailHelp" className="form-text" style={{fontFamily: 'sans-serif'}}>
                             We'll never share your email with anyone else.
                         </div>
                     </div>
                     <div className="mb-3">
-                        <label htmlFor="exampleInputPassword1" className="form-label">
+                        <label htmlFor="exampleInputPassword1" className="form-label" style={{fontFamily: 'sans-serif'}}>
                             Password
                         </label>
                         <input
@@ -90,7 +91,7 @@ export default function Signup() {
                         />
                     </div>
                     <div className="mb-3">
-                        <label htmlFor="exampleInputPassword1" className="form-label">
+                        <label htmlFor="exampleInputPassword1" className="form-label" style={{fontFamily: 'sans-serif'}}>
                             Address
                         </label>
                         <input
@@ -103,13 +104,14 @@ export default function Signup() {
                         />
                     </div>
 
-                    <button type="submit" className=" m-3 btn btn-success">
+                    <button type="submit" className=" m-3 btn btn-success" style={{fontFamily: 'sans-serif'}}>
                         Submit
                     </button>
-                    <Link to="/login" className="m-3 btn btn-danger">
+                    <Link to="/login" className="m-3 btn btn-danger" style={{fontFamily: 'sans-serif'}}>
                         Already a User
                     </Link>
                 </form>
+                </div>
             </div>
         </>
     );

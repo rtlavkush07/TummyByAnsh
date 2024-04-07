@@ -39,15 +39,15 @@ export default function Card(props) {
         return (
         <div>
             <div
-                className="card mt-3 "
-                style={{ width: "18rem", maxHeight: "360px" }}
+                className="card mt-3  border-2 border-danger"
+                style={{ width: "20rem", maxHeight: "380px" }}
             >
-                <img className="card-img-top" src={props.foodItem.img}
+                <img className="card-img-top " src={props.foodItem.img}
                 alt="pizza" style={{height:"200px",objectFit: "fill"}}/>
                 <div className="card-body">
-                    <h5 className="card-title">{props.foodItem.name} </h5>
+                    <h5 className="card-title " style={{color: "orangered", background: "aliceblue",  padding: "5px",textAlign: 'center', fontFamily: "sans-serif",  }}>{props.foodItem.name} </h5>
                     <div className="container w-100">
-                        <select className="m-2 h-100  bg-success rounded" onChange={(e)=> setQty(e.target.value)}>
+                        <select className="m-2 h-100  rounded" style={{color: "white",  background: "tomato", border: "none",fontFamily: "sans-serif", color: "white", padding: "4px",cursor: "pointer"}} onChange={(e)=> setQty(e.target.value)}>
                             {Array.from(Array(6), (e, i) => {
                                 return (
                                     <option key={i + 1} value={i + 1}>
@@ -56,7 +56,7 @@ export default function Card(props) {
                                 );
                             })}
                         </select>
-                        <select className="m-2 h-100  bg-success rounded" ref={priceRef} onChange={(e)=> setSize(e.target.value)}>
+                        <select className="m-2 h-100  rounded" style={{background: "coral", border: "none", fontFamily: "sans-serif",  color: "white", padding: "4px",cursor: "pointer"}} ref={priceRef} onChange={(e)=> setSize(e.target.value)}>
                             {priceOptions.map((data)=>{
                             return <option key ={data} value={data}>{data}</option>
                             })}
@@ -66,7 +66,7 @@ export default function Card(props) {
                         <div className="d-inline h-100 fs-s">₹{finalPrice}/-</div>
                         
                         <hr/>
-                        <button className="btn btn-success justify-center ms-2" onClick={handleaddtocart}>
+                        <button className="btn btn-success justify-center ms-2" style={{ cursor: "cell", fontFamily: "sans-serif",}} onClick={handleaddtocart}>
                         Add to Cart</button>
                     </div>
                     
